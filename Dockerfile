@@ -7,6 +7,6 @@ ENV REFRESHED_AT 2015-9-7
 RUN apt-get update
 RUN apt-get install -y g++
 
-CMD ["make", "-C", "/opt/code", "&&", "/opt/code/server"]
+CMD ["/usr/bin/make", "-C", "/opt/code", "&&", "/opt/code/server"]
 
 EXPOSE 5555
